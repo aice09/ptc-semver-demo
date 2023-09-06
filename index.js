@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   const hostname = os.hostname();
-  res.send(`Hosted on server: ${hostname}\n`);
+  res.send(`Hosted on: ${hostname}\n`);
 });
 
 app.listen(port, () => {

@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v1.0.0
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v1.0.0
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
 
@@ -29,5 +29,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t your-docker-username/hostname-web-app .
-          docker push your-docker-username/hostname-web-app
+          docker build -t aice0927/ptc-semver-demo .
+          docker push aice0927/ptc-semver-demo
